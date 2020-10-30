@@ -1,0 +1,203 @@
+header.mainHeader {
+  background-color: $light;
+  width: 100vw;
+  height: 70px;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: all 0.5s ease-in-out;
+  &.scrolledHeader {
+    box-shadow: 0 2px 4px rgba($dark, 0.06);
+  }
+  .headerContent {
+    width: 1280px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
+    .headerContent__left {
+      align-items: center;
+      .hcl__burgerCont {
+        align-items: center;
+        justify-content: center;
+        .burger {
+          .line1,
+          .line2 {
+            margin: 3px;
+          }
+          .line1 {
+            .sec1 {
+              height: 1.5px;
+              width: 20px;
+              background-color: $dark;
+              border-radius: 1px;
+            }
+          }
+          .line2 {
+            .sec1 {
+              height: 1.5px;
+              width: 10px;
+              background-color: $dark;
+              border-radius: 1px;
+            }
+          }
+        }
+      }
+      .brandLink {
+        margin-left: 1.5rem;
+        img.logoImg {
+          height: 1.25rem;
+        }
+      }
+      .hcl__branchLinks {
+        margin-left: 4rem;
+        align-items: center;
+        .branchLink {
+          color: $secondaryText;
+          letter-spacing: -0.5px;
+          transition: 0.25s ease-in-out;
+          &:hover {
+            color: $dark;
+          }
+          &:nth-child(2) {
+            margin: 0 1rem;
+          }
+        }
+      }
+    }
+    .headerContent__right {
+      align-items: center;
+      .hcr__searchBar {
+        margin-right: 2rem;
+        position: relative;
+        input.headerSearchInput {
+          background-color: $secondaryLight;
+          border: none;
+          height: 40px;
+          width: 300px;
+          padding: 0 40px 0 1rem;
+          border-radius: 6px;
+          font-size: 0.9rem;
+        }
+        .searchIconCont {
+          position: absolute;
+          right: 0;
+          top: 0;
+          height: 40px;
+          width: 40px;
+          align-items: center;
+          justify-content: center;
+          .searchIcon {
+            color: $secondaryText;
+            font-size: 1.15rem;
+          }
+        }
+      }
+      .hcr__accountSessions {
+        align-items: center;
+        .accountElement {
+          &:nth-child(2) {
+            margin: 0 1rem;
+          }
+          .shoppingCartIcon,
+          .heartIcon,
+          .userIcon,
+          .searchIcon {
+            font-size: 1.25rem;
+          }
+        }
+        .searchIconCont {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+// Responsive Styling
+
+@media screen and (max-width: 1280px) {
+  header.mainHeader {
+    .headerContent {
+      width: calc(100% - 50px) !important;
+    }
+  }
+}
+@media screen and (max-width: 1024px) {
+  header.mainHeader {
+    .headerContent {
+      .headerContent__left {
+        .hcl__branchLinks {
+          display: none;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  header.mainHeader {
+    .headerContent {
+      width: calc(100% - 32px) !important;
+
+      .headerContent__right {
+        .hcr__searchBar {
+          position: absolute;
+          left: 0;
+          right: 0;
+          width: 100vw;
+          transform: translateY(-100%);
+          opacity: 0;
+          visibility: hidden;
+          transition: all 0.5s ease-in-out;
+          &.pulledDownSearchBar {
+            transform: translateY(0);
+            opacity: 1;
+            visibility: visible;
+          }
+          input.headerSearchInput {
+            height: 70px;
+            width: calc(100% - 40px);
+            border-radius: 0;
+          }
+          .searchIconCont {
+            height: 70px;
+            width: 70px;
+            position: initial;
+            background-color: $secondaryLight;
+            transition: all 0.25s ease-in-out;
+            &:hover {
+              background-color: $secondary;
+            }
+          }
+        }
+        .hcr__accountSessions {
+          .heartIconCont {
+            display: none;
+          }
+          .searchIconCont {
+            display: flex;
+            margin: 0 1rem;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 374px) {
+  header.mainHeader {
+    .headerContent {
+      .headerContent__left {
+        .brandLink {
+          margin-left: 1rem;
+        }
+      }
+      .headerContent__right {
+        .hcr__accountSessions {
+          .searchIconCont {
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+}

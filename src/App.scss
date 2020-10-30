@@ -1,0 +1,42 @@
+@font-face {
+  font-family: "Wavehaus";
+  src: url("./Assets/Fonts/Wavehaus/Wavehaus-28Thin.otf");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Wavehaus";
+  src: url("./Assets/Fonts/Wavehaus/Wavehaus-42Light.otf");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Wavehaus";
+  src: url("./Assets/Fonts/Wavehaus/Wavehaus-66Book.otf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Wavehaus";
+  src: url("./Assets/Fonts/Wavehaus/Wavehaus-95SemiBold.otf");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Wavehaus";
+  src: url("./Assets/Fonts/Wavehaus/Wavehaus-128Bold.otf");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Wavehaus";
+  src: url("./Assets/Fonts/Wavehaus/Wavehaus-158ExtraBold.otf");
+  font-weight: 800;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("./Assets/Fonts/Inter/Inter.ttf");
+}
+@font-face {
+  font-family: "Manrope";
+  src: url("./Assets/Fonts/Manrope/Manrope.ttf");
+}
+@import "./Library/Variables.scss";
+@import "./Library/Framework.scss";
+@import "./Components/Components.scss";
+@import "./Pages/Pages.scss";
