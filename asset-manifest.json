@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/bechall/static/css/main.3623ddab.chunk.css",
+    "main.js": "/bechall/static/js/main.dd45fcea.chunk.js",
+    "main.js.map": "/bechall/static/js/main.dd45fcea.chunk.js.map",
+    "runtime-main.js": "/bechall/static/js/runtime-main.5f7c991a.js",
+    "runtime-main.js.map": "/bechall/static/js/runtime-main.5f7c991a.js.map",
+    "static/js/2.18a7c5bb.chunk.js": "/bechall/static/js/2.18a7c5bb.chunk.js",
+    "static/js/2.18a7c5bb.chunk.js.map": "/bechall/static/js/2.18a7c5bb.chunk.js.map",
+    "static/js/3.7888bda8.chunk.js": "/bechall/static/js/3.7888bda8.chunk.js",
+    "static/js/3.7888bda8.chunk.js.map": "/bechall/static/js/3.7888bda8.chunk.js.map",
+    "index.html": "/bechall/index.html",
+    "static/css/main.3623ddab.chunk.css.map": "/bechall/static/css/main.3623ddab.chunk.css.map",
+    "static/js/2.18a7c5bb.chunk.js.LICENSE.txt": "/bechall/static/js/2.18a7c5bb.chunk.js.LICENSE.txt",
+    "static/media/App.scss": "/bechall/static/media/Wavehaus-95SemiBold.4e467f6b.otf",
+    "static/media/LogoFull.8c513171.png": "/bechall/static/media/LogoFull.8c513171.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5f7c991a.js",
+    "static/js/2.18a7c5bb.chunk.js",
+    "static/css/main.3623ddab.chunk.css",
+    "static/js/main.dd45fcea.chunk.js"
+  ]
+}
